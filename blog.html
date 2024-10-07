@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blogs</title>
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+  
+  <!-- Css Styles -->
+  <style>
+    body,
+    html {
+      font-family: "Lexend", sans-serif;
+  
+    }
+  </style>
+  
+  
+  <!-- Daisy Ui & Tailwind Css -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+  
+  <!-- header -->
+  <header class="bg-[#F9F7F3] pb-2">
+  
+    <!-- navigation bar -->
+    <nav
+      class="flex flex-col gap-2  md:flex-row justify-center  md:justify-between items-center  px-3 lg:px-28 py-3 lg:py-6 ">
+  
+      <!-- nav btn -->
+      <div>
+        <button class="btn bg-[#B4F461] border-none px-4 md:px-8">Home</button>
+      </div>
+  
+      <!-- nav logo -->
+      <div class="flex justify-center items-center gap-4">
+        <img src="assets/logo.png" alt="">
+        <h3 class="text-xl font-semibold">Donate Bangladesh</h3>
+      </div>
+  
+      <!-- my current balance -->
+      <div class="flex justify-center items-center gap-2">
+        <img src="assets/coin.png" alt="">
+        <h4 class="text-xl font-medium text-[#111111B3]">5500 BDT</h4>
+  
+      </div>
+    </nav>
+  
+  </header>
+
+<!-- important faq -->
+
+<main class="mx-4 md:mx-36 my-4 md:my-20">
+
+  <h1 class="text-6xl font-extrabold mb-10">Important FAQ</h1>
+  <!-- faq -->
+   <div>
+    <div class="collapse collapse-arrow py-4 md:py-8 border-2 border-b-0 rounded-b-none">
+      <input type="radio" name="my-accordion-2" checked="checked" />
+      <div class="collapse-title text-xl font-medium">what is the document object model(DOM)?</div>
+      <div class="collapse-content">
+        <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the page so that programs
+        can change the document structure, style, and content. The DOM represents the document as nodes and objects; that way,
+        programming languages can interact with the page.</p>
+      </div>
+    </div>
+    <div class="collapse collapse-arrow py-4 md:py-8 border-2 border-b-0 rounded-none">
+      <input type="radio" name="my-accordion-2" />
+      <div class="collapse-title text-xl font-medium">how do you select an element from the dom?</div>
+      <div class="collapse-content">
+        <p>Using getElementById() <br>
+        Using getElementsByClassName() <br>
+        Using getElementsByTagName() <br>
+        Using querySelector() <br>
+        Using querySelectorAll() <br>
+        Changing the Text Content() <br>
+        Changing the HTML Content <br>
+        Changing the Attribute Value.</p>
+      </div>
+    </div>
+    <div class="collapse collapse-arrow py-4 md:py-8 border-2 rounded-t-none">
+      <input type="radio" name="my-accordion-2" />
+      <div class="collapse-title text-xl font-medium">what is the event delegation in the context of the dom, and why is it useful?</div>
+      <div class="collapse-content">
+        <p>
+          he process of using event propagation (bubbling) to handle events at a higher level in the DOM than the element on which
+          the event originated
+       </p>
+      </div>
+    </div>
+   </div>
+</main>
+
+</body>
+</html>
