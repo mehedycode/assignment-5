@@ -24,13 +24,14 @@
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
 
+
 </head>
 <body>
   <!-- header -->
-  <header class="bg-[#F9F7F3] pb-6">
+  <header class=" sticky top-0 right-0 left-0 bg-white pb-6">
 
     <!-- navigation bar -->
-    <nav class="flex flex-col gap-2  md:flex-row justify-center  md:justify-between items-center  px-3 lg:px-28 py-3 lg:py-6 ">
+    <nav class="bg-[#F9F7F3]  flex flex-col gap-2  md:flex-row justify-center  md:justify-between items-center  px-3 md:px-28 py-3 md:pt-6 pb-10">
 
       <!-- nav btn -->
       <div>
@@ -51,17 +52,18 @@
       </div>
     </nav>
   
+    <!-- hero section btns -->
+    <div class="flex justify-center items-center gap-3 mt-6 ">
+      <button id="donate" class="btn  bg-[#B4F461] hover:bg-[#B4F461] border-none px-8">Donation</button>
+      <button id="history" class="btn hover:bg-[#B4F461] border-none px-8">History</button>
+    
+    </div>
   </header>
 
   <!-- main -->
   <main class="mx-4 md:mx-36 my-4 md:my-20">
    
-    <!-- hero section btns -->
-    <div class="flex justify-center items-center gap-3 mb-10">
-    <button id="donate" class="btn  bg-[#B4F461] hover:bg-[#B4F461] border-none px-8">Donation</button>
-    <button id="history" class="btn hover:bg-[#B4F461] focus:bg-[#B4F461] border-none px-8">History</button>
-       
-    </div>
+   
  
   <!-- donate details section container -->
   <div id="donate_sections_container" class="flex flex-col gap-9">
@@ -75,8 +77,8 @@
       </div>
     <!-- noakhali information -->
      <div class="flex flex-col gap-4 md:w-1/2">
-        <div class="w-28 flex items-center gap-2 bg-[#1111110D] rounded-lg px-4 py-2">
-          <img class="w-4" src="assets/coin.png" alt="">
+        <div class="w-36 flex items-center justify-center gap-2 bg-[#1111110D] rounded-lg px-4 py-3">
+          <img class="w-6" src="assets/coin.png" alt="">
           <h4 id="public_donate_bdt" class="font-medium text-[#111111B3] text-base">0 </h4><span>BDT</span>
         
         </div> 
@@ -105,8 +107,8 @@
       </div>
       <!-- feni information -->
       <div class="flex flex-col gap-4 md:w-1/2">
-        <div class="w-28 flex items-center gap-2 bg-[#1111110D] rounded-lg px-4 py-2">
-          <img class="w-4" src="assets/coin.png" alt="">
+        <div class="w-36 flex items-center justify-center gap-2 bg-[#1111110D] rounded-lg px-4 py-3">
+          <img class="w-6" src="assets/coin.png" alt="">
           <h4 id="public_donate_bdt_feni" class="font-medium text-[#111111B3] text-base">0 </h4><span>BDT</span>
     
         </div>
@@ -137,8 +139,8 @@
       </div>
       <!-- quotamovement information -->
       <div class="flex flex-col gap-4 md:w-1/2">
-        <div class="w-28 flex items-center gap-2 bg-[#1111110D] rounded-lg px-4 py-2">
-          <img class="w-4" src="assets/coin.png" alt="">
+        <div class="w-36 flex items-center justify-center gap-2 bg-[#1111110D] rounded-lg px-4 py-3">
+          <img class="w-6" src="assets/coin.png" alt="">
           <h4 id="public_donate_injured_students" class="font-medium text-[#111111B3] text-base">0 </h4> <span>BDT</span>
     
         </div>
@@ -168,6 +170,7 @@
   
     
     </div>
+
   </main>
  
   <!-- footer -->
@@ -179,6 +182,7 @@
 <script src="js/script.js"></script>
 <script src="js/utilities.js"></script>
 <script src="js/swith.js"></script>
+
 
 
 </body>

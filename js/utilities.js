@@ -21,6 +21,5 @@ function swith(id) {
 document.getElementById('donate_sections_container').classList.add('hidden')
 document.getElementById('transection_container').classList.add('hidden')
 
-  
 document.getElementById(id).classList.remove('hidden')
 }

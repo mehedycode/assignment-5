@@ -16,6 +16,12 @@ document.getElementById('doante_noakhaki').addEventListener('click', function (e
     return alert('Please Enter a Number')
   }
 
+  if (donateValueNoakhali < 1) {
+    
+  return alert('please enter valid value')
+  }
+
+
   const myCurrentBalance = textValueById('my_current_balance')
   if (donateValueNoakhali > myCurrentBalance) {
     return alert('inufficient balance')
@@ -25,6 +31,11 @@ document.getElementById('doante_noakhaki').addEventListener('click', function (e
   const donatedPublicBalanceTotal = donateValueNoakhali + donatedPublicBalance
 
   document.getElementById('public_donate_bdt').innerText = donatedPublicBalanceTotal
+
+     if (donateValueNoakhali > 0) {
+    alert('Successfully Donated')
+  }
+  
 
   let time = new Date()
 
@@ -43,6 +54,8 @@ document.getElementById('doante_noakhaki').addEventListener('click', function (e
 
   document.getElementById('my_current_balance').innerText = updatedBalance
 
+
+
 })
 
 
@@ -57,6 +70,12 @@ document.getElementById('feni_donate').addEventListener('click', function (event
     return alert('Please Enter a Number')
   }
 
+  if (donateValueFeni < 1) {
+    
+  return alert('please enter valid value')
+  }
+
+
   const myCurrentBalance = textValueById('my_current_balance')
    if (donateValueFeni > myCurrentBalance) {
     return alert('inufficient balance')
@@ -67,6 +86,10 @@ document.getElementById('feni_donate').addEventListener('click', function (event
 
   document.getElementById('public_donate_bdt_feni').innerText = donatedPublicBalanceTotal
 
+      if (donateValueFeni > 0) {
+    alert('Successfully Donated')
+  }
+  
 
    let time = new Date()
 
@@ -98,6 +121,11 @@ document.getElementById('donate_injured_students').addEventListener('click', fun
     return alert('Please Enter a Number')
   }
 
+  if (donateValueQM < 1) {
+    
+  return alert('please enter valid value')
+  }
+
   const myCurrentBalance = textValueById('my_current_balance')
    if (donateValueQM > myCurrentBalance) {
     return alert('inufficient balance')
@@ -107,6 +135,11 @@ document.getElementById('donate_injured_students').addEventListener('click', fun
   const donatedPublicBalanceTotal = donateValueQM + donatedPublicBalance
 
   document.getElementById('public_donate_injured_students').innerText = donatedPublicBalanceTotal
+
+    if (donateValueQM > 0) {
+    alert('Successfully Donated')
+  }
+  
 
    let time = new Date()
 
@@ -131,13 +164,14 @@ document.getElementById('donate_injured_students').addEventListener('click', fun
 
 document.getElementById('history').addEventListener('click', function () {
   
-document.getElementById('donate').classList.remove('bg-[#B4F461]')
+  document.getElementById('donate').classList.remove('bg-[#B4F461]')
+  document.getElementById('history').classList.add('bg-[#B4F461]')
 
 })
 
 document.getElementById('donate').addEventListener('click', function () {
   
-  document.getElementById('history').classList.remove('focus:bg-[#B4F461]')
+  document.getElementById('history').classList.remove('bg-[#B4F461]')
   document.getElementById('donate').classList.add('bg-[#B4F461]')
 
 })
